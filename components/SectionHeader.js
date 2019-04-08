@@ -24,7 +24,7 @@ export default class SectionHeader extends Component {
       <Text>{this.props.title}</Text>;
 
     return (
-      <View ref="view">
+      <View ref="view" style={styles.container}>
         {content}
       </View>
     );
@@ -33,9 +33,10 @@ export default class SectionHeader extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#f8f8f8',
-    borderTopWidth: 1,
-    borderTopColor: '#ececec'
+    backgroundColor: 'rgba(255, 255, 255, 0.9)',
+    paddingVertical: 7,
+    paddingHorizontal: 4,
+    height: 30
   },
   text: {
     fontWeight: '700',
