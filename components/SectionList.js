@@ -137,7 +137,7 @@ export default class SectionList extends Component {
     });
 
     return (
-      <View style={styles.container}
+      <View style={styles.container}>
         <View ref="view" style={[this.props.style]}
           onStartShouldSetResponder={returnTrue}
           onMoveShouldSetResponder={returnTrue}
