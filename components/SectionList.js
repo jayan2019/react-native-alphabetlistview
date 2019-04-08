@@ -137,14 +137,16 @@ export default class SectionList extends Component {
     });
 
     return (
-      <View ref="view" style={[styles.container, this.props.style]}
-        onStartShouldSetResponder={returnTrue}
-        onMoveShouldSetResponder={returnTrue}
-        onResponderGrant={this.detectAndScrollToSection}
-        onResponderMove={this.detectAndScrollToSection}
-        onResponderRelease={this.resetSection}
-      >
-        {sections}
+      <View style={styles.container}
+        <View ref="view" style={[this.props.style]}
+          onStartShouldSetResponder={returnTrue}
+          onMoveShouldSetResponder={returnTrue}
+          onResponderGrant={this.detectAndScrollToSection}
+          onResponderMove={this.detectAndScrollToSection}
+          onResponderRelease={this.resetSection}
+        >
+          {sections}
+        </View>
       </View>
     );
   }
