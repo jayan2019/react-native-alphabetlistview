@@ -8,6 +8,7 @@ import ReactNative, {
   Text,
   NativeModules,
 } from 'react-native';
+import ReactNativeHapticFeedback from 'react-native-haptic-feedback';
 
 const { UIManager } = NativeModules;
 
@@ -26,6 +27,7 @@ export default class SectionList extends Component {
   }
 
   onSectionSelect(sectionId, fromTouch) {
+    ReactNativeHapticFeedback.trigger('impactLight', false);
     this.props.onSectionSelect && this.props.onSectionSelect(sectionId);
 
     if (!fromTouch) {
