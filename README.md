@@ -30,7 +30,7 @@ I apologize for the bad name.
 The most basic way to use this component is as follows:
 
 ```javascript
-var AlphabetListView = require('react-native-alphabetlistview');
+import AlphabetListView from 'react-native-alphabetlistview';
 
 // inside your render function
 <AlphabetListView
