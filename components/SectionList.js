@@ -140,14 +140,16 @@ export default class SectionList extends Component {
 
     return (
       <View style={styles.container}>
-        <View ref="view" style={[this.props.style]}
+        <View ref="view" style={[this.props.style, styles.subContainer]}
           onStartShouldSetResponder={returnTrue}
           onMoveShouldSetResponder={returnTrue}
           onResponderGrant={this.detectAndScrollToSection}
           onResponderMove={this.detectAndScrollToSection}
           onResponderRelease={this.resetSection}
         >
-          {sections}
+          <View style={styles.itemContainer}>
+            {sections}
+          </View>
         </View>
       </View>
     );
@@ -201,7 +203,18 @@ const styles = StyleSheet.create({
     justifyContent:'center',
     right: 5,
     top: 0,
-    bottom: 0
+    bottom: 0,
+  },
+
+  subContainer: {
+    alignItems:'flex-end',
+    justifyContent:'center',
+    width: 30
+  },
+
+  itemContainer: {
+    alignItems:'center',
+    justifyContent:'center'
   },
 
   item: {
