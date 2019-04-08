@@ -195,8 +195,8 @@ const styles = StyleSheet.create({
   container: {
     position: 'absolute',
     backgroundColor: 'transparent',
-    alignItems:'flex-end',
-    justifyContent:'flex-start',
+    alignItems:'center',
+    justifyContent:'center',
     right: 5,
     top: 0,
     bottom: 0
