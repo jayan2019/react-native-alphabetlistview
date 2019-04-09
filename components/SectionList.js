@@ -218,7 +218,7 @@ const styles = StyleSheet.create({
   },
 
   item: {
-    padding: 0
+    padding: 2
   },
 
   text: {
