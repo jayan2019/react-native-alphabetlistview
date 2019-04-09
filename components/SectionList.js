@@ -201,7 +201,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'transparent',
     alignItems:'center',
     justifyContent:'center',
-    right: 5,
+    right: 0,
     top: 0,
     bottom: 0,
   },
@@ -209,7 +209,8 @@ const styles = StyleSheet.create({
   subContainer: {
     alignItems:'flex-end',
     justifyContent:'center',
-    width: 30
+    width: 40,
+    paddingRight: 5,
   },
 
   itemContainer: {
