@@ -197,6 +197,7 @@ SectionList.propTypes = {
 
 const styles = StyleSheet.create({
   container: {
+    flex:1,
     position: 'absolute',
     backgroundColor: 'transparent',
     alignItems:'center',
@@ -219,7 +220,7 @@ const styles = StyleSheet.create({
   },
 
   item: {
-    padding: 2
+    padding: 1
   },
 
   text: {
